@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "meat_py"
+authors = [{name = "David Wu", email = "david.wu1@monash.edu"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "Pillow"
+]
+
+[project.urls]
+Home = "https://github.com/dwu0042/meat_py"
+
+[project.scripts]
+"meat.py" = "meat_py.main:main"
